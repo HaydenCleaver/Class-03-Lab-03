@@ -59,4 +59,24 @@ else {
   alert('Incorrect. Josh enjoyed balut.');
 }
 
-alert('Thanks for playing, ' + userName + '.');
+alert('Thanks for playing, ' + userName + '.'); 
+
+let numberAnswer = Math.floor(Math.random() * 10) + 1;
+for(let attempts = 0; attempts < 4; attempts++) {
+  let userAnswer = parseInt(prompt('Guess a number between 1 and 10'));
+  if (userAnswer === numberAnswer) {
+    alert('Correct, the number was ' + numberAnswer);
+    break;
+  }
+  else {
+    if (userAnswer > numberAnswer) {
+      alert('You guessed too high');
+    }
+    if (userAnswer < numberAnswer) {
+      alert('You guessed too low');
+    }
+  }
+}
+
+alert(`The number was ${numberAnswer}`);
+
