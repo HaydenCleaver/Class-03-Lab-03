@@ -1,0 +1,30 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    color: lightgray;
+    background-color: black;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+section {
+    padding: 1%;
+    margin: 1%;
+    border: lightgrey dotted 2px;
+    border-radius: 10px;
+}
+
+a {
+    color: lightblue;
+}
+
+a:visited {
+    color: lightpink;
+}
+
+a:hover {
+    background-color: slategrey;
+}
+
+footer {
+    font-size: small;
+}
